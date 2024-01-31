@@ -13,7 +13,8 @@ async def start(bot: Client, msg: Message):
     await bot.send_message(
         chat_id=msg.chat.id,
         text=f"""» ʜᴇʏ⚡️{msg.from_user.mention}  ⚡️,
- ɪ ᴀᴍ⚡️{me2}⚡️,
+ » ɪ ᴀᴍ{me2},
+» Aɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ.
 » ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴛʜᴇ ᴘʏᴛʜᴏɴ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ꜰᴏʀ.
 » ɪғ ʏᴏᴜ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ, ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ: [⚡️𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛-𝗫𝗗⚡️](tg://user?id={OWNER_ID}) !""",
         reply_markup=InlineKeyboardMarkup(
