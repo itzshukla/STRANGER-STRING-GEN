@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from config import OWNER_ID, SUDO_USER_ID
 from StringGenBot.db.users import add_served_user, get_served_users
 
-from StringGenBot.generator import generate_string
+from StringGenBot.generate import generate_string
 
 @Client.on_message(filters.private & ~filters.service, group=1)
 async def users_sql(_, msg: Message):
