@@ -27,7 +27,7 @@ async def start(bot: Client, msg: Message):
                 ],
                 [
                     InlineKeyboardButton("⚡️𝗦𝗨𝗣𝗣𝗢𝗥𝗧⚡️", url="https://t.me/MASTIWITHFRIENDSX"),
-                    InlineKeyboardButton("⚡️𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛-𝗫𝗗⚡️", url="https://t.me/SHIVANSH39")
+                    InlineKeyboardButton("⚡️𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛-𝗫𝗗⚡️", url="https://t.me/SHIVANSH474")
                 ]
             ]
         ),
