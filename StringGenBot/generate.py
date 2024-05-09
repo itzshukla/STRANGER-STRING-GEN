@@ -37,21 +37,21 @@ import config
 ask_ques = "**☞︎︎︎ ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 𖤍 ✔️ **"
 buttons_ques = [
     [
-        InlineKeyboardButton("𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 💗", callback_data="pyrogram1"),
-        InlineKeyboardButton("𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅2 💗", callback_data="pyrogram"),
+        InlineKeyboardButton("🔸ᴘʏʀᴏɢʀᴀᴍ🔸", callback_data="pyrogram1"),
+        InlineKeyboardButton("▫️ᴘʏʀᴏɢʀᴀᴍ 𝚅2 ▫️", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 💻", callback_data="telethon"),
+        InlineKeyboardButton("▪️ᴛᴇʟᴇᴛʜᴏɴ▪️", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝙱𝙾𝚃 🤖", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝙱𝙾𝚃 🤖", callback_data="telethon_bot"),
+        InlineKeyboardButton("🔻ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ 🔻", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("🔺ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ 🔺", callback_data="telethon_bot"),
     ],
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text="𝙶𝙴𝙽𝚁𝙰𝚃𝙴 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 𖤍", callback_data="generate")
+        InlineKeyboardButton(text="❖ ɢᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ ❖", callback_data="generate")
     ]
 ]
 
