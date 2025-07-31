@@ -1,3 +1,4 @@
+from config import START_IMG
 from pyrogram.types import Message
 from telethon import TelegramClient
 from pyrogram import Client, filters
@@ -34,24 +35,24 @@ import config
 
 
 
-ask_ques = "**☞︎︎︎ ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 𖤍 ✔️ **"
+ask_ques = "**☞︎︎︎ ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ✔️ **"
 buttons_ques = [
     [
-        InlineKeyboardButton("▪️ᴘʏʀᴏɢʀᴀᴍ▪️", callback_data="pyrogram"),
-        InlineKeyboardButton("▪️ᴘʏʀᴏɢʀᴀᴍ ᴠ2▪️", callback_data="pyrogram"),
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", callback_data="pyrogram"),
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("🔺ᴛᴇʟᴇᴛʜᴏɴ🔺", callback_data="telethon"),
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
     ],
     [
-        InlineKeyboardButton("🔸ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ🔸", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("🔹ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ🔹", callback_data="telethon_bot"),
-    ],
+        InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="start_menu")
+    ]
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text="🔹ɢᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="generate")
+        InlineKeyboardButton(text="⌨️ ɢᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ", callback_data="generate")
     ]
 ]
 
@@ -59,8 +60,12 @@ gen_button = [
 
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command(["generate", "gen", "string", "str"]))
-async def main(_, msg):
-    await msg.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
+async def main(_, msg: Message):
+    await msg.reply_photo(
+        photo=START_IMG,  
+        caption=ask_ques,
+        reply_markup=InlineKeyboardMarkup(buttons_ques)
+    )
 
 
 async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: bool = False, is_bot: bool = False):
