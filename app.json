@@ -1,42 +1,56 @@
 {
-  "name": "🧿𝐒𝐓𝐑𝐀𝐍𝐆𝐄𝐑 𝐒𝐓𝐑𝐈𝐍𝐆 𝐁𝐎𝐓🧿",
-  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
+  "name": "sᴛʀᴀɴɢᴇʀ sᴛʀɪɴɢ ᴍᴀᴋᴇʀ",
+  "description": "ᴀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ & ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴs ᴇᴀsɪʟʏ.",
   "logo": "https://te.legra.ph/file/8e779ca298fb47f368f2b.jpg",
   "keywords": [
     "telegram",
     "bot",
     "python",
-    "pyrogram"
+    "pyrogram",
+    "telethon",
+    "string session"
   ],
-    "env": {
-        "BOT_TOKEN": {
-            "description": "Get this value from @BotFather",
-            "required": true
-        },  
-        "MUST_JOIN": {
-            "description": "Username of a group or channel for which you want to set force sub.(without @)",
-            "required": true      
-        }, 
-        "MONGO_URL": {
-            "description": "mongo db url here",
-            "required": true
-        },
-        "API_ID": {
-            "description": "telegram api id here",
-            "required": true
-        },
-        "OWNER_ID": {
-            "description": "Telegram id of the person who will known as owner of the bot.",
-            "required": true
-        }, 
-        "API_HASH": {
-            "description": "telegram api hash here",
-            "required": true
-        }
+  "env": {
+    "BOT_TOKEN": {
+      "description": "ɢᴇᴛ ᴛʜɪs ᴛᴏᴋᴇɴ ғʀᴏᴍ @BotFather",
+      "required": true
     },
-    "addons": [
-        {
-            "plan": "heroku-postgresql"
-        }
-    ]
+    "API_ID": {
+      "description": "ᴛᴇʟᴇɢʀᴀᴍ API ID ғʀᴏᴍ https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "ᴛᴇʟᴇɢʀᴀᴍ API ʜᴀsʜ ғʀᴏᴍ https://my.telegram.org",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɴᴜᴍᴇʀɪᴄ ᴜsᴇʀ ɪᴅ (ᴀs ᴏᴡɴᴇʀ)",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "ʏᴏᴜʀ ᴍᴏɴɢᴏ-ᴅʙ ᴜʀɪ sᴛʀɪɴɢ (sᴛᴀʀᴛɪɴɢ ᴡɪᴛʜ mongodb+srv...)",
+      "required": true
+    },
+    "MUST_JOIN": {
+      "description": "ᴄʜᴀɴɴᴇʟ ᴏʀ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ ғᴏʀ ғᴏʀᴄᴇ ᴊᴏɪɴ (ᴡɪᴛʜᴏᴜᴛ @)",
+      "required": true
+    },
+    "START_IMG": {
+      "description": "ʟɪɴᴋ ᴛᴏ ᴀɴ ɪᴍᴀɢᴇ sʜᴏᴡɴ ɪɴ /start (ᴊᴘɢ ᴏʀ ᴘɴɢ)",
+      "required": false
+    },
+    "SUPPORT_CHAT": {
+      "description": "sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ (ᴡɪᴛʜᴏᴜᴛ @)",
+      "required": false
+    },
+    "UPDATE_CHANNEL": {
+      "description": "ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ (ᴡɪᴛʜᴏᴜᴛ @)",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
 }
